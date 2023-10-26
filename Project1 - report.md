@@ -155,8 +155,8 @@ Shihan Zhou, 2023/10/06
 
 
 ##### FOR more detail, please find my code ipynb in the code_pj1 folder.
-[Data Acquisition](code_pj1/Data\ Acquisition.ipynb)
+[Data Acquisition](./code_pj1/Data\ Acquisition.ipynb)
 
-[Data Processing and statistical analysis](code_pj1/Data\ Processing\ and\ Statistical\ Analysis.ipynb)
+[Data Processing and statistical analysis](./code_pj1/Data\ Processing\ and\ Statistical\ Analysis.ipynb)
 
-[Prediction Model](code_pj1/Prediction\ Model.ipynb)
+[Prediction Model](./code_pj1/Prediction\ Model.ipynb)
