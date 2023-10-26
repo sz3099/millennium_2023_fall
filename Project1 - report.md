@@ -52,11 +52,11 @@ Shihan Zhou, 2023/10/06
 
 * Log national home price index
 
-  <img src=".\code_pj1\log_national_home_price_index.png" alt="log_national_home_price_index" style="zoom:72%;" />
+  <img src="code_pj1/log_national_home_price_index.png" alt="log_national_home_price_index" style="zoom:72%;" />
 
 * Log difference of home price index --> showing significant pattern of seasonality
 
-  <img src=".\code_pj1\delta_log_national_home_price_index.png" alt="delta_log_national_home_price_index" style="zoom:67%;" />
+  <img src="code_pj1/delta_log_national_home_price_index.png" alt="delta_log_national_home_price_index" style="zoom:67%;" />
 
 * **If Stationary?**
 
@@ -64,17 +64,17 @@ Shihan Zhou, 2023/10/06
 
   * From the Autocorrelation figures (ACF), most of the macro indicators are not stationary. (This may result in false correlation problem if we apply regression model to 2 non-stationary time series.)
 
-    <img src=".\code_pj1\ADF test result1.png" alt="ADF test result1" style="zoom:40%;" />
+    <img src="code_pj1/ADF test result1.png" alt="ADF test result1" style="zoom:40%;" />
 
   * I calculate one-order difference to make those non-stationary variables stationary. 
 
 * **Correlation:**
 
-  <img src=".\code_pj1\correlation matrix.png" alt="correlation matrix" style="zoom:60%;" />
+  <img src="code_pj1/correlation matrix.png" alt="correlation matrix" style="zoom:60%;" />
 
   * Plot the lagged correlation with log difference of national home price index (Select some variables with comparatively high correlation in the corr matrix)
 
-    ![lagged corr](.\code_pj1\lagged corr.png)
+    ![lagged corr](code_pj1/lagged corr.png)
 
 * I also did some cointegration test to test those indicators who has high correlation with the log national home price index and see whether is false correlation.
   * we see only GDP, PCE and units of house started are correlated.
@@ -87,7 +87,7 @@ Shihan Zhou, 2023/10/06
 
 * 3 principal components is enough to explain most of the variance 
 
-  <img src=".\code_pj1\PCA variance explained.png" alt="PCA variance explained" style="zoom:67%;" />
+  <img src="code_pj1/PCA variance explained.png" alt="PCA variance explained" style="zoom:67%;" />
 
   * Loading of the PCA shows some meanings of each one:
     * PCA1: focus on interest rate and growth
@@ -96,9 +96,9 @@ Shihan Zhou, 2023/10/06
 
 * The PCs are not stationary but their 1-order difference is stationary.
 
-* ![corr matrix PCA](.\code_pj1\corr matrix PCA.png)
+* ![corr matrix PCA](code_pj1/corr matrix PCA.png)
 
-* ![lag corr PCA](.\code_pj1\lag corr PCA.png)
+* ![lag corr PCA](code_pj1/lag corr PCA.png)
 
 
 
@@ -112,19 +112,19 @@ Shihan Zhou, 2023/10/06
 
 * If I stand at 2018 to predict the following 5 years, the predicted value is quite accurate at the first 2 years. But the booming of house price at 2020 can not be foreseen.
 
-  ![predict futures - arima](.\code_pj1\predict futures - arima.png)
+  ![predict futures - arima](code_pj1/predict futures - arima.png)
 
 * Then on a rolling basis, I refit the model every month to predict the next month's log house price index. The 1-month look ahead is quite close to the real value. 
 
-  ![Rooling 1-month look-ahead sarima](.\code_pj1\Rooling 1-month look-ahead sarima.png)
+  ![Rooling 1-month look-ahead sarima](code_pj1/Rooling 1-month look-ahead sarima.png)
 
 * If look 6-month ahead, it is more volatile:
 
-  ![Rooling 6-month look-ahead sarima](C:\Users\Shihan Zhou\Desktop\2024 Career Hunt\millennium\code_pj1\Rooling 6-month look-ahead sarima.png)
+  ![Rooling 6-month look-ahead sarima](code_pj1/Rooling 6-month look-ahead sarima.png)
 
   
 
-![arima eval](C:\Users\Shihan Zhou\Desktop\2024 Career Hunt\millennium\code_pj1\arima eval.png)
+![arima eval](code_pj1/arima eval.png)
 
 
 
@@ -136,7 +136,7 @@ Shihan Zhou, 2023/10/06
 
 * I find that using PCA as predictors in regression model works better than selected variables. 
 
-  <img src=".\code_pj1\regres eval.png" alt="regres eval" style="zoom:67%;" />
+  <img src="code_pj1/regres eval.png" alt="regres eval" style="zoom:67%;" />
 
 
 
@@ -148,7 +148,7 @@ Shihan Zhou, 2023/10/06
 
 * The 6-month look-ahead prediction also does not improve.
 
-  ![arimax eval](.\code_pj1\arimax eval.png)
+  ![arimax eval](code_pj1/arimax eval.png)
 
 
 
