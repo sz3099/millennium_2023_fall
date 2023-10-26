@@ -18,9 +18,9 @@ Macro uncertainty and financial uncertainty are usually high during the period o
 
 In the below graphs, I use VIX as a proxy of investors' uncertainty about the financial market and plot its correlation with the price of MSCI World Index. We can see a negative correlation between the daily log returns of MSCI-W and VIX with no lag. 
 
-![VIX_MSCI](.\code_pj3\VIX_MSCI.png)
+<img src=".\code_pj3\VIX_MSCI.png" alt="VIX_MSCI" style="zoom:80%;" />
 
-<img src=".\code_pj3\VIX_MSCI_xcorr.png" alt="VIX_MSCI_xcorr" style="zoom:67%;" />
+<img src=".\code_pj3\VIX_MSCI_xcorr.png" alt="VIX_MSCI_xcorr" style="zoom: 80%;" />
 
 In the article shared by 2Sigma,  *Beyond the VIX: Alternative Measures of Macro and Financial Uncertainty*, the author plots the loadings of linear regression of macro and financial uncertainty on several macro assets or indexes as below. They follow the methodology of *Jurado, Ludvigson, and Ng (2015)* to calculate the macro uncertainty and financial uncertainty. We can also see a negative impact of uncertainty on the global market.
 

@@ -74,7 +74,7 @@ Shihan Zhou, 2023/10/06
 
   * Plot the lagged correlation with log difference of national home price index (Select some variables with comparatively high correlation in the corr matrix)
 
-    ![lagged corr](code_pj1/lagged corr.png)
+    <img src="code_pj1/lagged corr.png" alt="lagged corr" style="zoom:80%;" />
 
 * I also did some cointegration test to test those indicators who has high correlation with the log national home price index and see whether is false correlation.
   * we see only GDP, PCE and units of house started are correlated.
@@ -96,9 +96,9 @@ Shihan Zhou, 2023/10/06
 
 * The PCs are not stationary but their 1-order difference is stationary.
 
-* ![corr matrix PCA](code_pj1/corr matrix PCA.png)
+* <img src="code_pj1/corr matrix PCA.png" alt="corr matrix PCA" style="zoom:80%;" />
 
-* ![lag corr PCA](code_pj1/lag corr PCA.png)
+* <img src="code_pj1/lag corr PCA.png" alt="lag corr PCA" style="zoom:80%;" />
 
 
 
@@ -112,19 +112,19 @@ Shihan Zhou, 2023/10/06
 
 * If I stand at 2018 to predict the following 5 years, the predicted value is quite accurate at the first 2 years. But the booming of house price at 2020 can not be foreseen.
 
-  ![predict futures - arima](code_pj1/predict futures - arima.png)
+  <img src="code_pj1/predict futures - arima.png" alt="predict futures - arima" style="zoom:80%;" />
 
 * Then on a rolling basis, I refit the model every month to predict the next month's log house price index. The 1-month look ahead is quite close to the real value. 
 
-  ![Rooling 1-month look-ahead sarima](code_pj1/Rooling 1-month look-ahead sarima.png)
+  <img src="code_pj1/Rooling 1-month look-ahead sarima.png" alt="Rooling 1-month look-ahead sarima" style="zoom:80%;" />
 
 * If look 6-month ahead, it is more volatile:
 
-  ![Rooling 6-month look-ahead sarima](code_pj1/Rooling 6-month look-ahead sarima.png)
+  <img src="code_pj1/Rooling 6-month look-ahead sarima.png" alt="Rooling 6-month look-ahead sarima" style="zoom:80%;" />
 
   
 
-![arima eval](code_pj1/arima eval.png)
+<img src="code_pj1/arima eval.png" alt="arima eval" style="zoom:67%;" />
 
 
 
@@ -148,7 +148,7 @@ Shihan Zhou, 2023/10/06
 
 * The 6-month look-ahead prediction also does not improve.
 
-  ![arimax eval](code_pj1/arimax eval.png)
+  <img src="code_pj1/arimax eval.png" alt="arimax eval" style="zoom:67%;" />
 
 
 
